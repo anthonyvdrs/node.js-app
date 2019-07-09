@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 require("./models/Pet")(app);
 require("./routes/petRoutes")(app);
 
-mongoose.connect("mongodb://username:123password@ds251902.mlab.com:51902/testerino");
+
+mongoose.connect("mongodb+srv://anthonyvdrs:MON--MDP@cluster0-6zrjn.mongodb.net/test?retryWrites=true&w=majority");
 
 // choose what port on which to run the server
 const PORT = 5000;
